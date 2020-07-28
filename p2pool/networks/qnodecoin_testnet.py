@@ -1,6 +1,6 @@
-from p2pool.dash import networks
+from p2pool.qnodecoin import networks
 
-PARENT = networks.nets['dash_testnet']
+PARENT = networks.nets['qnodecoin_testnet']
 SHARE_PERIOD = 20 # seconds
 CHAIN_LENGTH = 24*60*60//20 # shares
 REAL_CHAIN_LENGTH = 24*60*60//20 # shares
@@ -14,6 +14,6 @@ MIN_TARGET = 0
 MAX_TARGET = 2**256//2**20 - 1
 PERSIST = False
 WORKER_PORT = 17903
-BOOTSTRAP_ADDRS = 'p2pool.dashninja.pl test.p2pool.masternode.io test.p2pool.dash.siampm.com'.split(' ')
+BOOTSTRAP_ADDRS = 'p2pool.qnodecoinninja.pl test.p2pool.masternode.io test.p2pool.qnodecoin.siampm.com'.split(' ')
 ANNOUNCE_CHANNEL = ''
 VERSION_CHECK = lambda v: True

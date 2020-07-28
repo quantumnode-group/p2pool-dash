@@ -1,15 +1,15 @@
 from twisted.internet import defer, reactor
 from twisted.trial import unittest
 
-from p2pool.dash import data, networks, p2p
+from p2pool.qnodecoin import data, networks, p2p
 from p2pool.util import deferral
 
 
 class Test(unittest.TestCase):
     @defer.inlineCallbacks
     def test_get_block(self):
-        factory = p2p.ClientFactory(networks.nets['dash'])
-        c = reactor.connectTCP('127.0.0.1', 9999, factory)
+        factory = p2p.ClientFactory(networks.nets['qnodecoin'])
+        c = reactor.connectTCP('127.0.0.1', 20612, factory)
         try:
             h = 0x00000000000132b9afeca5e9a2fdf4477338df6dcff1342300240bc70397c4bb
             block = yield deferral.retry()(defer.inlineCallbacks(lambda: defer.returnValue((yield (yield factory.getProtocol()).get_block(h)))))()

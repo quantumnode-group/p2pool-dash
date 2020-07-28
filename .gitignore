@@ -1,6 +1,9 @@
 *.pyc
 *.pyo
 *~
+.idea/*
+idea/*
+
 
 /data/
 /litecoin_scrypt/build/
@@ -11,5 +14,6 @@ Makefile.local
 .coverage
 build/
 ltc_scrypt.so
-
+__pycache__/
 .DS_Store
+build
