@@ -63,7 +63,7 @@ class Protocol(p2protocol.Protocol):
         self.pinger = deferral.RobustLoopingCall(self.send_ping, nonce=1234)
         self.pinger.start(30)
 
-    # https://github.com/qnodecoinpay/qnodecoin/blob/v0.12.1.x/src/protocol.h#L338-L362
+    # https://github.com/quantumnode-group/qnodecoin/blob/master/src/protocol.h#L357-L386
     message_inv = pack.ComposedType([
         ('invs', pack.ListType(pack.ComposedType([
             ('type', pack.EnumType(pack.IntType(32), {
