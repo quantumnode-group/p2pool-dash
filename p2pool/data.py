@@ -655,7 +655,7 @@ def get_warnings(tracker, best_share, net, qnodecoind_getnetworkinfo, qnodecoind
     majority_desired_version = max(desired_version_counts, key=lambda k: desired_version_counts[k])
     if majority_desired_version > (Share.SUCCESSOR if Share.SUCCESSOR is not None else Share).VOTING_VERSION and desired_version_counts[majority_desired_version] > sum(desired_version_counts.itervalues())/2:
         res.append('A MAJORITY OF SHARES CONTAIN A VOTE FOR AN UNSUPPORTED SHARE IMPLEMENTATION! (v%i with %i%% support)\n'
-            'An upgrade is likely necessary. Check https://github.com/qnodecoinpay/p2pool-qnodecoin for more information.' % (
+            'An upgrade is likely necessary. Check https://github.com/quantumnode-group/qnodecoin-p2pool for more information.' % (
                 majority_desired_version, 100*desired_version_counts[majority_desired_version]/sum(desired_version_counts.itervalues())))
     
     if qnodecoind_getnetworkinfo['warnings'] != '':
