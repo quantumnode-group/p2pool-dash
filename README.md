@@ -1,8 +1,19 @@
+TO DO
+-----
+Rewrite the p2pool in either Rust or Golang:
+ * using modern _bitcoinrpc_ library 
+ * implement the _Stratum Protocol V2_
+ * implement support for more shares announcement channels
+    which includes social media (bots) and mail
+</br>
+</br>    
+
+
 Requirements:
 -------------------------
 Generic:
 
-* Qnodecoin >=0.13.0.0
+* Qnodecoin >=2.0
 * Python >=2.7
 * Twisted >=13.0.0
 * Zope.interface >=3.8.0
@@ -14,14 +25,10 @@ Linux:
 
 Install Python modules:
 -------------------------
-Download the required submodules:
-
-    git submodule init
-    git submodule update
 
 qnodecoin_hash:
 
-    cd dash_hash
+    cd qnodecoin_hash
     python setup.py install --user
 
 Running P2Pool:
@@ -29,15 +36,15 @@ Running P2Pool:
 To use P2Pool, you must be running your own local qnodecoind. For standard
 configurations, using P2Pool should be as simple as:
 
-    python run_p2pool.py
+    python run_p2pool.py --p2pool-port <PORT_NUMBER>
 
 Then run your miner program, connecting to 127.0.0.1 on port 7903 with any
 username and password.
 
 If you are behind a NAT, you should enable TCP port forwarding on your
 router. Forward port 9998 to the host running P2Pool.
-
-Run for additional options.
+</br>
+Run for additional options:
 
     python run_p2pool.py --help
 
