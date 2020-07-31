@@ -1,8 +1,8 @@
 TO DO
 -----
 Rewrite the p2pool in either Rust or Golang:
- * using modern _bitcoinrpc_ library 
- * implement the _Stratum Protocol V2_
+ * using modern **bitcoinrpc library** 
+ * implement the **Stratum Protocol V2**
  * implement support for more shares announcement channels
     which includes social media (bots) and mail
  * Front End Web
