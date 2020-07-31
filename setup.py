@@ -39,11 +39,11 @@ try:
             ('', ['README.md']),
 #            ("Microsoft.VC90.MFC", mfcfiles),
             ('web-static', [
-                'web-static/d3.v2.min.js',
+                #'web-static/d3.v2.min.js',
                 'web-static/favicon.ico',
-                'web-static/graphs.html',
+                #'web-static/graphs.html',
                 'web-static/index.html',
-                'web-static/share.html',
+                #'web-static/share.html',
             ]),
         ],
 
