@@ -17,7 +17,7 @@ WORKER_PORT = 7903
 
 #BOOTSTRAP_ADDRS = 'qnodecoin01.p2poolmining.us p2pool.2sar.ru qnodecoin02.p2poolmining.us p2pool.qnodecoin.siampm.com qnodecoin03.p2poolmining.us crypto.office-on-the.net qnodecoin04.p2poolmining.us'.split(' ')
 
-BOOTSTRAP_ADDRS = 'node1.walletbuilders.com 140.82.9.137 154.223.134.122 47.245.0.245 45.76.211.195 110.232.115.241 174.138.33.59 149.28.59.152'.split(' ')
+BOOTSTRAP_ADDRS = '140.82.9.137 154.223.134.122 47.245.0.245 45.76.211.195 110.232.115.241 174.138.33.59 149.28.59.152'.split(' ')
 
 ANNOUNCE_CHANNEL = '#qnodecoin-p2pool'
 VERSION_CHECK = lambda v: v >= 120100
