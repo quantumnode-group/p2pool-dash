@@ -8,5 +8,5 @@ var config = {
   // HTML to load at top of page
   //header_content_url: "http://localhost:8888/custom_content.html",
   // Default Theme
-  theme: 'Cyborg'
+  theme: 'Slate'
 }
