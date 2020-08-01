@@ -1,3 +1,6 @@
 [submodule "dash_hash"]
 	path = dash_hash
 	url = https://github.com/dashpay/dash_hash
+[submodule "web-static"]
+	path = web-static
+	url = https://github.com/justino/p2pool-ui-punchy
