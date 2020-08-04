@@ -5,6 +5,7 @@ Rewrite the p2pool in either Rust or Golang:
  * implement the **Stratum Protocol V2**
  * implement support for more shares announcement channels
     which includes social media (bots) and mail
+ * implement support for unix domain sockets for reverse proxy
  * Front End Web
     * Boostrap Update
     * _Polling for certain server information such as network bandwidth via  API_  
