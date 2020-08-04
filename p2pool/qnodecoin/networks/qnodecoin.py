@@ -13,7 +13,7 @@ ADDRESS_VERSION = 20
 SCRIPT_ADDRESS_VERSION = 21
 RPC_PORT = 20611
 RPC_CHECK = defer.inlineCallbacks(lambda qnodecoind: defer.returnValue(
-            (yield helper.check_block_header(qnodecoind, '000000000000462839c8ab437132454a15fc778321af82c34aaf9486779c7f89')) and
+            (yield helper.check_block_header(qnodecoind, '00000802cb89aa05be73de7e91ae33aec597c41f2f3832a2a95a5202400e5718')) and
             (yield qnodecoind.rpc_getblockchaininfo())['chain'] == 'main'
         ))
 BLOCKHASH_FUNC = lambda data: pack.IntType(256).unpack(__import__('qnodecoin_hash').getPoWHash(data))

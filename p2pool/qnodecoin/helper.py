@@ -121,9 +121,9 @@ def submit_block(block, ignore_failure, factory, qnodecoind, qnodecoind_work, ne
     submit_block_p2p(block, factory, net)
 
 @defer.inlineCallbacks
-def check_block_header(bitcoind, block_hash):
+def check_block_header(qnodecoind, block_hash):
     try:
-        yield bitcoind.rpc_getblockheader(block_hash)
+        yield qnodecoind.rpc_getblockheader(block_hash)
     except jsonrpc.Error_for_code(-5):
         defer.returnValue(False)
     else:
